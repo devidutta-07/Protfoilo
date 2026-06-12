@@ -1,0 +1,386 @@
+.main {
+  min-height: 100vh;
+  background: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .main {
+    background: #0f0f0f;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .intro {
+    color: #aaa;
+  }
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  .section h2 {
+    color: #fff;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #1a1a1a;
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+}
+
+.card:hover {
+  border-color: #667eea;
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.institution {
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+@media (prefers-color-scheme: dark) {
+  .institution {
+    color: #aaa;
+  }
+}
+
+.year {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.cgpa {
+  color: #667eea;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.skillCategory {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .skillCategory {
+    background: #1a1a1a;
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+}
+
+.skillCategory h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skillTag {
+  background: white;
+  border: 1px solid #667eea;
+  color: #667eea;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .skillTag {
+    background: rgba(102, 126, 234, 0.1);
+    border-color: #667eea;
+  }
+}
+
+.skillTag:hover {
+  background: #667eea;
+  color: white;
+}
+
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.achievementCard {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  transition: all 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .achievementCard {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.05) 100%);
+    border-color: rgba(102, 126, 234, 0.3);
+  }
+}
+
+.achievementCard:hover {
+  transform: translateY(-4px);
+  border-color: #667eea;
+}
+
+.achievementIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.achievementCard h3 {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.achievementCard p {
+  color: #666;
+}
+
+@media (prefers-color-scheme: dark) {
+  .achievementCard p {
+    color: #aaa;
+  }
+}
+
+.certsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.certItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .certItem {
+    background: #1a1a1a;
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+}
+
+.checkmark {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.certItem h3 {
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .certItem h3 {
+    color: #fff;
+  }
+}
+
+.certItem p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .certItem p {
+    color: #aaa;
+  }
+}
+
+.interestsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.interestBox {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.05) 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  .interestBox {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.02) 100%);
+  }
+}
+
+.interestBox h3 {
+  color: #667eea;
+  margin-bottom: 0.75rem;
+}
+
+.interestBox p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (prefers-color-scheme: dark) {
+  .interestBox p {
+    color: #aaa;
+  }
+}
+
+.ctaSection {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  margin-top: 4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ctaSection {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.02) 100%);
+  }
+}
+
+.ctaSection h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ctaSection h2 {
+    color: #fff;
+  }
+}
+
+.ctaSection p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ctaSection p {
+    color: #aaa;
+  }
+}
+
+.ctaBtn {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.ctaBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid,
+  .skillsGrid,
+  .achievementsGrid,
+  .interestsGrid {
+    grid-template-columns: 1fr;
+  }
+}
